@@ -1,0 +1,230 @@
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+html{scroll-behavior:smooth;}
+body{background:#f8fafc;color:#1e293b;overflow-x:hidden;}
+
+/* Header */
+header{
+  background:white;
+  box-shadow:0 2px 10px rgba(0,0,0,0.05);
+  position:sticky;top:0;z-index:1000;
+  animation:fadeDown 0.8s ease-in-out;
+}
+@keyframes fadeDown{0%{transform:translateY(-40px);opacity:0;}100%{transform:translateY(0);opacity:1;}}
+nav{
+  max-width:1200px;
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 25px;
+}
+nav .logo{font-weight:700;font-size:24px;color:#0284c7;}
+nav ul{list-style:none;display:flex;gap:22px;}
+nav ul li a{
+  text-decoration:none;color:#334155;font-weight:500;transition:color 0.3s;
+}
+nav ul li a:hover,nav ul li a.active{color:#0284c7;font-weight:600;}
+
+/* Sections */
+section{
+  max-width:1200px;
+  margin:50px auto;
+  padding:0 25px;
+  opacity:0;
+  transform:translateY(50px);
+  transition:opacity 0.8s ease,transform 0.8s ease;
+  scroll-margin-top:90px;
+}
+section.visible{opacity:1;transform:translateY(0);}
+
+/* Headings */
+h2{
+  font-size:28px;
+  color:#0284c7;
+  margin-bottom:20px;
+  text-align:left;
+  opacity:0;
+  transform:translateX(-40px);
+  transition:opacity 0.8s ease,transform 0.8s ease;
+}
+section.visible h2{opacity:1;transform:translateX(0);}
+h2::after{
+  content:"";
+  width:50px;
+  height:3px;
+  background:#0284c7;
+  display:block;
+  margin-top:5px;
+  border-radius:2px;
+}
+
+/* Hero */
+.hero{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:40px;margin-top:50px;
+  animation:fadeUp 1s ease-out;
+}
+@keyframes fadeUp{0%{opacity:0;transform:translateY(50px);}100%{opacity:1;transform:translateY(0);} }
+.hero-text{flex:1;min-width:280px;}
+.hero-text h1{font-size:38px;margin-bottom:10px;}
+.hero-text p{max-width:550px;color:#475569;font-size:16px;}
+.hero-buttons{margin-top:20px;display:flex;gap:15px;}
+.btn{
+  background:#0284c7;color:white;padding:10px 22px;border-radius:8px;text-decoration:none;font-weight:600;
+  box-shadow:0 4px 10px rgba(2,132,199,0.3);transition:all 0.3s ease;
+}
+.btn:hover{background:#0369a1;transform:translateY(-3px);}
+.btn-outline{background:white;color:#0284c7;border:2px solid #0284c7;}
+.btn-outline:hover{background:#e0f2fe;}
+.hero img{
+  width:340px;border-radius:18px;box-shadow:0 8px 25px rgba(0,0,0,0.1);
+  animation:slideInRight 1s ease-out;
+}
+@keyframes slideInRight{0%{opacity:0;transform:translateX(80px);}100%{opacity:1;transform:translateX(0);}}
+
+/* Card */
+.card{
+  background:white;border-radius:16px;padding:35px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+  margin-bottom:25px;
+  transition:transform 0.3s ease,box-shadow 0.3s ease;
+}
+.card:hover{transform:translateY(-5px);box-shadow:0 10px 25px rgba(0,0,0,0.1);}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:25px;}
+.skills span{
+  display:inline-block;background:#e0f2fe;color:#0369a1;padding:8px 14px;border-radius:22px;
+  margin:6px 8px 0 0;font-size:14px;font-weight:500;transition:transform 0.3s ease,background 0.3s ease;
+}
+.skills span:hover{background:#bae6fd;transform:scale(1.05);}
+
+/* Projects and Certifications */
+#projects .card, #certifications .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 35px 25px;
+}
+#projects .card p, #certifications .card p {
+  margin-bottom: 20px;
+}
+#projects .card .btn, #certifications .card .btn {
+  align-self: center;
+}
+
+/* Contact */
+form{display:flex;flex-direction:column;gap:12px;max-width:520px;margin:15px 0;}
+input,textarea{
+  padding:10px 12px;border-radius:10px;border:1px solid #cbd5e1;font-size:15px;transition:border 0.3s;
+}
+input:focus,textarea:focus{outline:none;border:1px solid #0284c7;}
+button{
+  background:#0284c7;color:white;border:none;padding:10px 22px;border-radius:8px;cursor:pointer;
+  font-size:15px;font-weight:600;transition:all 0.3s ease;
+}
+button:hover{background:#0369a1;transform:translateY(-2px);}
+
+footer{
+  background:#e2e8f0;text-align:center;padding:25px;color:#475569;margin-top:50px;font-size:14px;
+}
+
+@media(max-width:850px){
+  .hero{flex-direction:column;text-align:center;}
+  .hero img{width:80%;}
+  nav ul{display:none;}
+  section{padding:0 18px;}
+  .card{padding:28px;}
+}
+/* Hero */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 50px;
+  animation: fadeUp 1s ease-out;
+}
+
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(50px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  max-width: 550px;
+  color: #475569;
+  font-size: 16px;
+}
+
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  background: #0284c7;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #0369a1;
+  transform: translateY(-3px);
+}
+
+.btn-outline {
+  background: white;
+  color: #0284c7;
+  border: 2px solid #0284c7;
+}
+
+.btn-outline:hover {
+  background: #e0f2fe;
+}
+
+/* Hero Image */
+.hero img {
+  width: 340px;           /* Fixed width */
+  height: 340px;          /* Fixed height for square container */
+  border-radius: 50%;     /* Circular shape */
+  object-fit: cover;      /* Fill the container and crop */
+  object-position: center top; /* Focus on the face area */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  animation: slideInRight 1s ease-out;
+}
+
+@keyframes slideInRight {
+  0% { opacity: 0; transform: translateX(80px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero img {
+    width: 50%;
+    height: auto; /* Keep aspect ratio for small screens */
+    border-radius: 18px; /* Optional: less circular on small screens */
+    object-position: center top; /* Maintain focus on face */
+  }
+}
