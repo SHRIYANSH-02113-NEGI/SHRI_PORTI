@@ -227,4 +227,9 @@ footer{
     border-radius: 18px; /* Optional: less circular on small screens */
     object-position: center top; /* Maintain focus on face */
   }
+}/* Center hero buttons on smaller screens */
+@media (max-width: 900px) {
+  .hero-buttons {
+    justify-content: center;
+  }
 }
