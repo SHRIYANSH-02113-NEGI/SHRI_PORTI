@@ -1,150 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shriyansh Negi | Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shriyansh Negi | Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Shriyansh Negi</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<header>
-  <nav>
-    <div class="logo">Shriyansh Negi</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <section class="hero visible" id="home">
+      <div class="hero-text">
+        <h1>Hello, I'm Shriyansh !!!</h1>
+        <p>
+          A final-year B.Tech student with dreams of building something
+          impactful that can change someone's perspective.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="Shriyansh Negi.pdf" class="btn btn-outline" download>
+            Download Resume
+          </a>
+        </div>
+      </div>
 
-<section class="hero visible" id="home">
-  <div class="hero-text">
-    <h1>Hello, I'm Shriyansh 👋</h1>
-    <p>A final-year B.Tech student with dreams of building something impactful that can change someone's perspective.</p>
-    <div class="hero-buttons">
-      <a href="#projects" class="btn">View Projects</a>
-      <a href="Shriyansh Negi.pdf" class="btn btn-outline" download>Download Resume</a>
-    </div>
-  </div>
-</section>
+      <!-- 👇 THIS IS THE MISSING PART -->
+      <div class="hero-image">
+        <img src="avatar.png" alt="Shriyansh Negi" />
+      </div>
+    </section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <div class="card">
-    <p>B.Tech Computer Science student at Graphic Era Hill University, with Salesforce Developer internship experience and a proven track record in National-Level Hackathons (Top 30/300+ teams).</p>
-  </div>
-</section>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I am a final-year B.Tech Computer Science student at Graphic Era Hill University who enjoys working close to <b>how systems actually function</b> whether that’s <b>automating business logic</b>, <b>designing clean
+          interfaces</b>, or <b>handling low-level file operations</b>. <br> My experience as a
+          <b>Salesforce Developer Intern</b> gave me exposure to building
+          production-ready components, working with structured data models, and
+          understanding how software supports real organizational workflows.
+          <br><br>
+          Beyond Salesforce, I have explored <b>front-end development</b> and <b>desktop
+          applications</b> through projects like CRM automation systems, file
+          recovery tools, and productivity-focused software. <br><br><b>" I believe real learning rarely comes from writing code that works on the first try, most of it happens while understanding errors, tracing their causes, and fixing them
+with the help of proper documentation and references. "</b>
+        </p>
+      </div>
+    </section>
 
-<section id="education">
-  <h2>Education</h2>
-  <div class="grid">
-    <div class="card"><h3>Graphic Era Hill University</h3><p>B.Tech CSE — CGPA: 7.92</p></div>
-    <div class="card"><h3>Little Scholars, Kashipur</h3><p>Class XII — 77.8% (2022)</p></div>
-    <div class="card"><h3>Little Scholars, Kashipur</h3><p>Class X — 80.03% (2020)</p></div>
-  </div>
-</section>
+    <section id="education">
+      <h2>Education</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Graphic Era Hill University</h3>
+          <p>B.Tech CSE — CGPA: 7.92</p>
+        </div>
+        <div class="card">
+          <h3>Little Scholars, Kashipur</h3>
+          <p>Class XII — 77.8% (2022)</p>
+        </div>
+        <div class="card">
+          <h3>Little Scholars, Kashipur</h3>
+          <p>Class X — 80.03% (2020)</p>
+        </div>
+      </div>
+    </section>
 
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>Salesforce Developer Intern | Salesforce</h3>
-    <p><strong>May 2025 – July 2025</strong></p>
-    <ul>
-      <li>Developed Salesforce components (Apex, LWC, Flows, Visualforce).</li>
-      <li>Achieved 90%+ code coverage and optimized deployment pipelines.</li>
-      <li>Reduced manual errors by 30% through data model improvements.</li>
-    </ul>
-  </div>
-</section>
+    <section id="experience">
+      <h2>Experience</h2>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Recover-Ease</h3>
-      <p>File recovery tool for FAT32/NTFS with modular architecture and 70% recovery success.</p>
-      <a href="https://github.com/SHRIYANSH-02113-NEGI/FILE-RECOVER-SYSTEM-" target="_blank" class="btn btn-outline">View Repo</a>
-    </div>
-    <div class="card">
-      <h3>CrossLang Syntax Converter</h3>
-      <p>Lex + Python-based syntax translator with Streamlit UI achieving 85% accuracy.</p>
-      <a href="https://github.com/SHRIYANSH-02113-NEGI/Multi-language-Code-Translator" target="_blank" class="btn btn-outline">View Repo</a>
-    </div>
-    <div class="card">
-      <h3>VidSpeak</h3>
-      <p>Python Tkinter app that converts YouTube transcripts into summaries and TTS output.</p>
-      <a href="https://github.com/SHRIYANSH-02113-NEGI/PROJECT_IMPLEMENTATION/tree/main/PROJECT_VIDSPEAK" target="_blank" class="btn btn-outline">View Repo</a>
-    </div>
-    <div class="card">
-      <h3>HandsMen Thread: Automated System</h3>
-      <p>Built on Salesforce CRM using Flows, Triggers, and Email Alerts with an inventory dashboard, reducing manual tasks by 60%.</p>
-      <a href="https://github.com/SHRIYANSH-02113-NEGI/handsmen-salesforce-project" target="_blank" class="btn btn-outline">View Repo</a>
-    </div>
-  </div>
-</section>
+      <div class="card">
+        <h3>Front-End Web Development Intern | Edunet Foundation</h3>
+        <p><strong>Aug 2025 – Sept 2025</strong></p>
+        <ul>
+          <li>
+            Completed an intensive <b>6-week</b> Front-End Web Development
+            internship in collaboration with <b>AICTE</b> and
+            <b>IBM SkillsBuild</b>.
+          </li>
+          <li>
+            Designed and implemented <b>5+ responsive web interfaces</b> using
+            HTML, CSS, and JavaScript with a strong focus on layout consistency
+            and usability.
+          </li>
+          <li>
+            Contributed to <b>3+ mini projects</b>, translating UI requirements
+            into clean, maintainable front-end code.
+          </li>
+          <li>
+            Strengthened debugging and problem-solving capabilities, achieving
+            an estimated <b>25% improvement</b> in development efficiency.
+          </li>
+        </ul>
+      </div>
 
-<section id="skills">
-  <h2>Skills</h2>
-  <div class="card skills">
-    <span>C++</span><span>Python</span><span>C</span><span>HTML</span><span>CSS</span><span>PHP</span>
-    <span>SQL</span><span>MySQL</span><span>Salesforce (Apex, LWC)</span><span>Streamlit</span><span>Tkinter</span>
-    <span>Data Structures</span>
-  </div>
-</section>
+      <div class="card">
+        <h3>Salesforce Developer Intern | Salesforce</h3>
+        <p><strong>May 2025 – July 2025</strong></p>
+        <ul>
+          <li>
+            Engineered scalable Salesforce solutions using Apex, LWC, Flows, and
+            Visualforce within an Agile development environment, boosting
+            process efficiency by <b>25%</b>.
+          </li>
+          <li>
+            Authored comprehensive Apex test classes achieving <b>90%+</b> code
+            coverage and supported smooth deployments via Salesforce CLI and VS
+            Code.
+          </li>
+          <li>
+            Optimized Salesforce data models and SOQL queries to enhance
+            analytics workflows, reducing manual intervention by <b>30%</b>.
+          </li>
+        </ul>
+      </div>
+    </section>
 
-<section id="certifications">
-  <h2>Certifications</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Cloud Computation Foundation</h3>
-      <p>Cisco Certified Network Associate (2025)</p>
-      <a href="https://www.cisco.com/c/en_in/training-events/training-certifications/certifications.html" target="_blank" class="btn btn-outline">View Certificate</a>
-    </div>
-    <div class="card">
-      <h3>Salesforce Developer Trailhead</h3>
-      <p>Completed Salesforce Platform Developer I modules (2025)</p>
-      <a href="#" target="_blank" class="btn btn-outline">View Certificate</a>
-    </div>
-    <div class="card">
-      <h3>MongoDB Developer's Toolkit</h3>
-      <p>Completed MongoDB Developer's Toolkit by GeeksforGeeks (2025)</p>
-      <a href="#" target="_blank" class="btn btn-outline">View Certificate</a>
-    </div>
-    <div class="card">
-      <h3>Gemini For Google Workspace</h3>
-      <p>By Simplilearn || SkillUP (2025)</p>
-      <a href="#" target="_blank" class="btn btn-outline">View Certificate</a>
-    </div>
-  </div>
-</section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Recover-Ease</h3>
+          <p>
+            File recovery tool for FAT32/NTFS with modular architecture and 70%
+            recovery success.
+          </p>
+          <a
+            href="https://github.com/SHRIYANSH-02113-NEGI/FILE-RECOVER-SYSTEM-"
+            target="_blank"
+            class="btn btn-outline"
+            >View Repo</a
+          >
+        </div>
+        <div class="card">
+          <h3>CrossLang Syntax Converter</h3>
+          <p>
+            Lex + Python-based syntax translator with Streamlit UI achieving 85%
+            accuracy.
+          </p>
+          <a
+            href="https://github.com/SHRIYANSH-02113-NEGI/Multi-language-Code-Translator"
+            target="_blank"
+            class="btn btn-outline"
+            >View Repo</a
+          >
+        </div>
+        <div class="card">
+          <h3>VidSpeak</h3>
+          <p>
+            Python Tkinter app that converts YouTube transcripts into summaries
+            and TTS output.
+          </p>
+          <a
+            href="https://github.com/SHRIYANSH-02113-NEGI/PROJECT_IMPLEMENTATION/tree/main/PROJECT_VIDSPEAK"
+            target="_blank"
+            class="btn btn-outline"
+            >View Repo</a
+          >
+        </div>
+        <div class="card">
+          <h3>HandsMen Thread: Automated System</h3>
+          <p>
+            Built on Salesforce CRM using Flows, Triggers, and Email Alerts with
+            an inventory dashboard, reducing manual tasks by 60%.
+          </p>
+          <a
+            href="https://github.com/SHRIYANSH-02113-NEGI/handsmen-salesforce-project"
+            target="_blank"
+            class="btn btn-outline"
+            >View Repo</a
+          >
+        </div>
+      </div>
+    </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    <p>If you'd like to collaborate or discuss opportunities, feel free to reach out!</p>
-    <form id="contactForm">
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
-      <input type="email" id="email" name="email" placeholder="Your Email" required>
-      <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p style="margin-top:10px;">Or email me directly:
-      <a href="mailto:shriyansh02113@gmail.com" style="color:#0284c7;text-decoration:none;font-weight:600;">shriyansh02113@gmail.com</a>
-    </p>
-  </div>
-</section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card skills">
+        <span>Java</span><span>Python</span><span>C</span><span>C++</span
+        ><span>HTML</span><span>CSS</span><span>JavaScript</span
+        ><span>MYSQL</span><span>ANSI SQL</span><span>SOQL</span
+        ><span>Salesforce (Apex, LWC, Flows)</span><span>Tkinter</span
+        ><span>Streamlit</span>
+        <span>Data Structures & Algorithms</span>
+        <span>Cloud Fundamentals</span>
+      </div>
+    </section>
 
-<footer>© <span id="year"></span> Shriyansh Negi | Kashipur, Uttarakhand</footer>
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>
+            Oracle Cloud Infrastructure 2025 Certified Generative AI
+            Professional
+          </h3>
+          <p>Oracle Certification (Oct 2025)</p>
+          <a
+            href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=6DAB7F6F9B16ED2247578891CEB2CACF925A0E33DD6A39734B7C3F61E6E85136"
+            target="_blank"
+            class="btn btn-outline"
+            >View Certificate</a
+          >
+        </div>
+        <div class="card">
+          <h3>Web Development Fundamentals</h3>
+          <p>Web Development Fundamentals course by IBM SkillBuild (2025)</p>
+          <a
+            href="https://drive.google.com/file/d/1rGXaGazO5C-JAZdu3Q4IuvfpbhO4EvUr/view?usp=sharing"
+            target="_blank"
+            class="btn btn-outline"
+          >
+            View Certificate
+          </a>
+        </div>
+        <div class="card">
+          <h3>Cloud Computation Foundation</h3>
+          <p>NPTEL (2023)</p>
+          <a
+            href="https://drive.google.com/file/d/1eZLn-Wm1xtcL_0IHGfmUp-m6Hxix9uTE/view?usp=sharing"
+            target="_blank"
+            class="btn btn-outline"
+            >View Certificate</a
+          >
+        </div>
+        <div class="card">
+          <h3>Salesforce Developer Trailhead</h3>
+          <p>Completed Salesforce Platform Developer I modules (2025)</p>
+          <a href="#" target="_blank" class="btn btn-outline"
+            >View Certificate</a
+          >
+        </div>
 
-<!-- EmailJS SDK -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script src="script.js"></script>
-</body>
+        <div class="card">
+          <h3>MongoDB Developer's Toolkit</h3>
+          <p>Completed MongoDB Developer's Toolkit by GeeksforGeeks (2025)</p>
+          <a
+            href="https://drive.google.com/file/d/1_EMG2QxWOZr24WUrRP-MtVZCBGFpdMvl/view?usp=sharing"
+            target="_blank"
+            class="btn btn-outline"
+            >View Certificate</a
+          >
+        </div>
+
+        <div class="card">
+          <h3>Software Testing</h3>
+          <p>NPTEL (2025)</p>
+          <a
+            href="https://drive.google.com/file/d/11a5xA7E6Rs9-CgQ2NIpyBkOcd_QyesaQ/view?usp=sharing"
+            target="_blank"
+            class="btn btn-outline"
+            >View Certificate</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>
+          If you'd like to collaborate or discuss opportunities, feel free to
+          reach out!
+        </p>
+        <form id="contactForm">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+        <p style="margin-top: 10px">
+          Or email me directly:
+          <a
+            href="mailto:shriyansh02113@gmail.com"
+            style="color: #0284c7; text-decoration: none; font-weight: 600"
+            >shriyansh02113@gmail.com</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Shriyansh Negi | Kashipur, Uttarakhand
+    </footer>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
